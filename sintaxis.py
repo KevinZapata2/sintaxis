@@ -21,12 +21,30 @@
 
 #solicitar alusuario numeros al ingresar, luego en un ciclo pedir que ingrese numero al azar, evaluar la cantidad de numero impares ingresados
 
-cantidad_numeros = int(input("Ingrese la cantidad de números a evaluar: "))
-numeros_impares = 0
+# cantidad_numeros = int(input("Ingrese la cantidad de números a evaluar: "))
+# numeros_impares = 0
 
-for i in range(cantidad_numeros):
-    numero = int(input(f"Ingrese el número {i + 1}: "))
-    if numero % 2 != 0:
-        numeros_impares += 1
+# for i in range(cantidad_numeros):
+#     numero = int(input(f"Ingrese el número {i + 1}: "))
+#     if numero % 2 != 0:
+#         numeros_impares += 1
 
-print(f"La cantidad de números impares ingresados es: {numeros_impares}")
+# print(f"La cantidad de números impares ingresados es: {numeros_impares}")
+
+# for i in [1,2,3,]:
+#     for j in [4,5,6]:
+#         print(i,j)
+        
+#solicitar al usuario un numero menor a 0 igual a 10 y mostrar la tabla de multiplicar del 1 hasta el numero splicitado
+
+numero = int(input("Ingrese un número entre 1 y 10: "))
+
+if numero < 1 or numero > 10:
+    print("Por favor, ingrese un número entre 1 y 10.")
+else:
+    print(f"Tabla de multiplicar del 1 al {numero}:")
+    for i in range(1, numero + 1):
+        print(f"\nTabla de multiplicar del {i}:")
+        for j in range(1, 11):
+            resultado = i * j
+            print(f"{i} x {j} = {resultado}")
